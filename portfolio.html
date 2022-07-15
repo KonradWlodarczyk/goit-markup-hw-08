@@ -16,41 +16,62 @@
   <body>
     <header class="header">
       <div class="container header-section">
-            <a href="./index.html" class="logo header-section__logo">
-              <span class="logo__color">Web</span>
-              Studio
-            </a>
-            <nav>
-            <ul class="navigation">
-              <li class="navigation__item">
-                <a href="./index.html" class="navigation__link">agencja</a>
-              </li>
-              <li class="navigation__item">
-                <a href="./portfolio.html" class="navigation__link navigation__link--active">portfolio</a>
-              </li>
-              <li class="navigation__item">
-                <a href="" class="navigation__link">kontakt</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="contact">
-            <li class="contact__item">
-              <a href="mailto:info@devstudio.com" class="contact__link">
-                <svg class="contact__icon contact__icon--envelope">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
+        <a href="./index.html" class="logo header-section__logo">
+          <span class="logo__color">Web</span>
+          Studio
+        </a>
+        <nav>
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__link">agencja</a>
             </li>
-            <li class="contact__item">
-              <a href="tel:+48111111111" class="contact__link">
-                <svg class="contact__icon contact__icon--smartphone">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +48 111 111 111
-              </a>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link navigation__link--active"
+                >portfolio</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">kontakt</a>
             </li>
           </ul>
+        </nav>
+        <ul class="contact">
+          <li class="contact__item">
+            <a href="mailto:info@devstudio.com" class="contact__link">
+              <svg class="contact__icon contact__icon--envelope">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contact__item">
+            <a href="tel:+48111111111" class="contact__link">
+              <svg class="contact__icon contact__icon--smartphone">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111
+            </a>
+          </li>
+        </ul>
+        <button
+          class="button-mobile js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -59,45 +80,43 @@
           <div>
             <ul class="filter__list">
               <li class="filter__item">
-                <button type="button" class="button button--filter">
-                  Wszystkie
-                </button>
+                <button type="button" class="button button--filter">Wszystkie</button>
               </li>
               <li class="filter__item">
                 <button type="button" class="button button--filter">Strony</button>
               </li>
               <li class="filter__item">
-                <button type="button" class="button button--filter">
-                  Aplikacje
-                </button>
+                <button type="button" class="button button--filter">Aplikacje</button>
               </li>
               <li class="filter__item">
                 <button type="button" class="button button--filter">Dizajn</button>
               </li>
               <li class="filter__item">
-                <button type="button" class="button button--filter">
-                  Marketing
-                </button>
+                <button type="button" class="button button--filter">Marketing</button>
               </li>
             </ul>
           </div>
-          <section>
+          <section class="container">
             <ul class="offer__list">
               <li class="offer__item">
                 <figure class="offer__picture">
                   <img
                     class="offer__img"
-                    src="images/portfolio1.jpg"
+                    src="./images/offer/offer1-mobile-450x294@1x.jpg"
+                    srcset="./images/offer/offer1-mobile-450x294@1x.jpg 450w,
+                    ./images/offer/offer1-mobile-900x588@2x.jpg 900w,
+                    ./images/offer/offer1-tablet-354x294@1x.jpg 354w,
+                    ./images/offer/offer1-tablet-708x588@2x.jpg 708w,
+                    ./images/offer/offer1-desktop-370x294@1x.jpg 370w,
+                    ./images/offer/offer1-desktop-740x588@2x.jpg 740w"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px. (min-width: 480px) 450px"
                     alt="zdjęcie laptopa"
-                    width="370"
-                    height="294"
                   />
                   <div class="offer__overlay">
                     <p class="offer__overlay-text">
-                      Technocrack jest popularną platformą wykorzystywaną do
-                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                      platformę do celów szpiegowskich i ataków na
-                      niezabezpieczone serwery konkurencji
+                      Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
+                      koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków
+                      na niezabezpieczone serwery konkurencji
                     </p>
                   </div>
                   <figcaption class="offer__text">
@@ -110,22 +129,24 @@
                 <figure class="offer__picture">
                   <img
                     class="offer__img"
-                    src="images/portfolio2.jpg"
+                    src="./images/offer/offer2-mobile-450x294@1x.jpg"
+                    srcset="./images/offer/offer2-mobile-450x294@1x.jpg 450w,
+                    ./images/offer/offer2-mobile-900x588@2x.jpg 900w,
+                    ./images/offer/offer2-tablet-354x294@1x.jpg 354w,
+                    ./images/offer/offer2-tablet-708x588@2x.jpg 708w,
+                    ./images/offer/offer2-desktop-370x294@1x.jpg 370w,
+                    ./images/offer/offer2-desktop-740x588@2x.jpg 740w"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px. (min-width: 480px) 450px"
                     alt="zdjęcie koszykarzy"
-                    width="370"
-                    height="294"
                   />
                   <div class="offer__overlay">
                     <p class="offer__overlay-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nam vel arcu sem. Sed non sodales dui. Interdum et
-                      malesuada
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                      non sodales dui. Interdum et malesuada
                     </p>
                   </div>
                   <figcaption class="offer__text">
-                    <h3 class="offer__title">
-                      Grafika New Orlean vs Golden Star
-                    </h3>
+                    <h3 class="offer__title">Grafika New Orlean vs Golden Star</h3>
                     <p class="offer__category">Dizajn</p>
                   </figcaption>
                 </figure>
@@ -134,16 +155,20 @@
                 <figure class="offer__picture">
                   <img
                     class="offer__img"
-                    src="images/portfolio3.jpg"
+                    src="./images/offer/offer3-mobile-450x294@1x.jpg"
+                    srcset="./images/offer/offer3-mobile-450x294@1x.jpg 450w,
+                    ./images/offer/offer3-mobile-900x588@2x.jpg 900w,
+                    ./images/offer/offer3-tablet-354x294@1x.jpg 354w,
+                    ./images/offer/offer3-tablet-708x588@2x.jpg 708w,
+                    ./images/offer/offer3-desktop-370x294@1x.jpg 370w,
+                    ./images/offer/offer3-desktop-740x588@2x.jpg 740w"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px. (min-width: 480px) 450px"
                     alt="zdjęcie logo restauracji"
-                    width="370"
-                    height="294"
                   />
                   <div class="offer__overlay">
                     <p class="offer__overlay-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nam vel arcu sem. Sed non sodales dui. Interdum et
-                      malesuada
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                      non sodales dui. Interdum et malesuada
                     </p>
                   </div>
                   <figcaption class="offer__text">
@@ -156,16 +181,20 @@
                 <figure class="offer__picture">
                   <img
                     class="offer__img"
-                    src="images/portfolio4.jpg"
+                    src="./images/offer/offer4-mobile-450x294@1x.jpg"
+                    srcset="./images/offer/offer4-mobile-450x294@1x.jpg 450w,
+                    ./images/offer/offer4-mobile-900x588@2x.jpg 900w,
+                    ./images/offer/offer4-tablet-354x294@1x.jpg 354w,
+                    ./images/offer/offer4-tablet-708x588@2x.jpg 708w,
+                    ./images/offer/offer4-desktop-370x294@1x.jpg 370w,
+                    ./images/offer/offer4-desktop-740x588@2x.jpg 740w"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px. (min-width: 480px) 450px"
                     alt="zdjęcie słuchawek"
-                    width="370"
-                    height="294"
                   />
                   <div class="offer__overlay">
                     <p class="offer__overlay-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nam vel arcu sem. Sed non sodales dui. Interdum et
-                      malesuada
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                      non sodales dui. Interdum et malesuada
                     </p>
                   </div>
                   <figcaption class="offer__text">
@@ -178,16 +207,20 @@
                 <figure class="offer__picture">
                   <img
                     class="offer__img"
-                    src="images/portfolio5.jpg"
+                    src="./images/offer/offer5-mobile-450x294@1x.jpg"
+                    srcset="./images/offer/offer5-mobile-450x294@1x.jpg 450w,
+                    ./images/offer/offer5-mobile-900x588@2x.jpg 900w,
+                    ./images/offer/offer5-tablet-354x294@1x.jpg 354w,
+                    ./images/offer/offer5-tablet-708x588@2x.jpg 708w,
+                    ./images/offer/offer5-desktop-370x294@1x.jpg 370w,
+                    ./images/offer/offer5-desktop-740x588@2x.jpg 740w"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px. (min-width: 480px) 450px"
                     alt="zdjęcie pudełek"
-                    width="370"
-                    height="294"
                   />
                   <div class="offer__overlay">
                     <p class="offer__overlay-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nam vel arcu sem. Sed non sodales dui. Interdum et
-                      malesuada
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                      non sodales dui. Interdum et malesuada
                     </p>
                   </div>
                   <figcaption class="offer__text">
@@ -200,16 +233,20 @@
                 <figure class="offer__picture">
                   <img
                     class="offer__img"
-                    src="images/portfolio6.jpg"
+                    src="./images/offer/offer6-mobile-450x294@1x.jpg"
+                    srcset="./images/offer/offer6-mobile-450x294@1x.jpg 450w,
+                    ./images/offer/offer6-mobile-900x588@2x.jpg 900w,
+                    ./images/offer/offer6-tablet-354x294@1x.jpg 354w,
+                    ./images/offer/offer6-tablet-708x588@2x.jpg 708w,
+                    ./images/offer/offer6-desktop-370x294@1x.jpg 370w,
+                    ./images/offer/offer6-desktop-740x588@2x.jpg 740w"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px. (min-width: 480px) 450px"
                     alt="zdjęcie monitora"
-                    width="370"
-                    height="294"
                   />
                   <div class="offer__overlay">
                     <p class="offer__overlay-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nam vel arcu sem. Sed non sodales dui. Interdum et
-                      malesuada
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                      non sodales dui. Interdum et malesuada
                     </p>
                   </div>
                   <figcaption class="offer__text">
@@ -222,16 +259,20 @@
                 <figure class="offer__picture">
                   <img
                     class="offer__img"
-                    src="images/portfolio7.jpg"
+                    src="./images/offer/offer7-mobile-450x294@1x.jpg"
+                    srcset="./images/offer/offer7-mobile-450x294@1x.jpg 450w,
+                    ./images/offer/offer7-mobile-900x588@2x.jpg 900w,
+                    ./images/offer/offer7-tablet-354x294@1x.jpg 354w,
+                    ./images/offer/offer7-tablet-708x588@2x.jpg 708w,
+                    ./images/offer/offer7-desktop-370x294@1x.jpg 370w,
+                    ./images/offer/offer7-desktop-740x588@2x.jpg 740w"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px. (min-width: 480px) 450px"
                     alt="zdjęcie magazynu"
-                    width="370"
-                    height="294"
                   />
                   <div class="offer__overlay">
                     <p class="offer__overlay-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nam vel arcu sem. Sed non sodales dui. Interdum et
-                      malesuada
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                      non sodales dui. Interdum et malesuada
                     </p>
                   </div>
                   <figcaption class="offer__text">
@@ -244,16 +285,20 @@
                 <figure class="offer__picture">
                   <img
                     class="offer__img"
-                    src="images/portfolio8.jpg"
+                    src="./images/offer/offer8-mobile-450x294@1x.jpg"
+                    srcset="./images/offer/offer8-mobile-450x294@1x.jpg 450w,
+                    ./images/offer/offer8-mobile-900x588@2x.jpg 900w,
+                    ./images/offer/offer8-tablet-354x294@1x.jpg 354w,
+                    ./images/offer/offer8-tablet-708x588@2x.jpg 708w,
+                    ./images/offer/offer8-desktop-370x294@1x.jpg 370w,
+                    ./images/offer/offer8-desktop-740x588@2x.jpg 740w"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px. (min-width: 480px) 450px"
                     alt="zdjęcie etykiety"
-                    width="370"
-                    height="294"
                   />
                   <div class="offer__overlay">
                     <p class="offer__overlay-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nam vel arcu sem. Sed non sodales dui. Interdum et
-                      malesuada
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                      non sodales dui. Interdum et malesuada
                     </p>
                   </div>
                   <figcaption class="offer__text">
@@ -266,16 +311,20 @@
                 <figure class="offer__picture">
                   <img
                     class="offer__img"
-                    src="images/portfolio9.jpg"
+                    src="./images/offer/offer1-mobile-450x294@1x.jpg"
+                    srcset="./images/offer/offer9-mobile-450x294@1x.jpg 450w,
+                    ./images/offer/offer9-mobile-900x588@2x.jpg 900w,
+                    ./images/offer/offer9-tablet-354x294@1x.jpg 354w,
+                    ./images/offer/offer9-tablet-708x588@2x.jpg 708w,
+                    ./images/offer/offer9-desktop-370x294@1x.jpg 370w,
+                    ./images/offer/offer9-desktop-740x588@2x.jpg 740w"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px. (min-width: 480px) 450px"
                     alt="zdjęcie laptopa2"
-                    width="370"
-                    height="294"
                   />
                   <div class="offer__overlay">
                     <p class="offer__overlay-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nam vel arcu sem. Sed non sodales dui. Interdum et
-                      malesuada
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                      non sodales dui. Interdum et malesuada
                     </p>
                   </div>
                   <figcaption class="offer__text">
@@ -305,9 +354,7 @@
                 </a>
               </li>
               <li class="footer-contact__item">
-                <a href="tel:+48111111111" class="footer-contact__link">
-                  +48 111 111 111
-                </a>
+                <a href="tel:+48111111111" class="footer-contact__link"> +48 111 111 111 </a>
               </li>
             </ul>
           </address>
@@ -348,11 +395,20 @@
         <div class="newsletter">
           <h3 class="newsletter__title">zapisz się do newslettera</h3>
           <div>
-            <form class="newsletter__form" name="formularz-newslettera" autocomplete="on" action="http://localhost:3000/posts"
-          method="POST">
-              <input 
-              class="newsletter__box"
-              type="email" name="email" placeholder="E-mail" required/>
+            <form
+              class="newsletter__form"
+              name="formularz-newslettera"
+              autocomplete="on"
+              action="http://localhost:3000/posts"
+              method="POST"
+            >
+              <input
+                class="newsletter__box"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
               <button class="button button--newsletter" type="submit">
                 Zapisz się
                 <svg class="newsletter__icon">
@@ -364,5 +420,71 @@
         </div>
       </section>
     </footer>
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+          <button class="mobile-menu__button-close js-close-menu">
+            <svg class="mobile-menu__icon">
+              <use href="./images/icons.svg#mobile-menu-button-close"></use>
+            </svg>
+          </button>
+    
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link mobile-menu__link--active-page"
+                >agencja</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link">portfolio</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link">kontakt</a>
+            </li>
+          </ul>
+    
+          <ul class="mobile-menu__list mobile-menu__list--contact">
+            <li class="mobile-menu__item mobile-menu__item--contact">
+              <a href="tel:+48111111111" class="mobile-menu__link mobile-menu__link--phone">
+                +48 111 111 111
+              </a>
+            </li>
+            <li class="mobile-menu__item mobile-menu__item--contact">
+              <a href="mailto:info@devstudio.com" class="mobile-menu__link mobile-menu__link--mail">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+    
+          <ul class="mobile-menu__social-list">
+            <li>
+              <a href="#" class="mobile-menu__social-link">instagram</a>
+            </li>
+            <li>
+              <svg class="mobile-menu__social-icon">
+                <use href="images/icons.svg#icon-vertical-line"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="#" class="mobile-menu__social-link">twitter</a>
+            </li>
+            <li>
+              <svg class="mobile-menu__social-icon">
+                <use href="images/icons.svg#icon-vertical-line"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="#" class="mobile-menu__social-link">facebook</a>
+            </li>
+            <li>
+              <svg class="mobile-menu__social-icon">
+                <use href="images/icons.svg#icon-vertical-line"></use>
+              </svg>
+            </li>
+            <li>
+              <a href="#" class="mobile-menu__social-link">linkedin</a>
+            </li>
+          </ul>
+        </div>
+        <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

@@ -74,7 +74,6 @@ a {
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
-  align-items: center;
 }
 
 .backdrop {
@@ -849,6 +848,9 @@ a {
   color: #fff;
   margin-bottom: 9px;
 }
+.footer-contact__item:last-child {
+  margin-bottom: 0;
+}
 .footer-contact__link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
@@ -859,9 +861,6 @@ a {
 }
 .footer-contact__list {
   display: block;
-}
-.footer-contact__list:last-child {
-  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -874,6 +873,9 @@ a {
     min-width: 245px;
     flex-basis: auto;
     align-items: flex-start;
+  }
+  .footer-contact__item {
+    text-align: start;
   }
 }
 .footer-social {
@@ -892,7 +894,7 @@ a {
 @media screen and (min-width: 768px) {
   .footer-social {
     flex-basis: 50%;
-    margin-top: -120px;
+    padding-top: 5px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -930,7 +932,6 @@ a {
   height: 24px;
   fill: currentColor;
 }
-
 .newsletter__box {
   height: 50px;
   width: 100%;
@@ -958,23 +959,47 @@ a {
     width: 450px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .newsletter {
+    padding-left: 78px;
+    padding-top: 12px;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .newsletter__form {
+    flex-direction: row;
+  }
+  .newsletter__box {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}
 .filter__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 34px;
-}
-.filter__item {
-  margin-left: 8px;
-  margin-bottom: 8px;
+  padding-bottom: 40px;
+  gap: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .filter {
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    padding-bottom: 50px;
+  }
+}
 .offer__list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
+  gap: 30px;
+  justify-content: space-between;
 }
 .offer__text {
   border-right: 1px solid #eeeeee;
@@ -983,25 +1008,23 @@ a {
   position: relative;
   z-index: 1001;
   background-color: #fff;
+  padding: 20px 24px;
 }
 .offer__title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding: 20px 24px 4px 24px;
 }
 .offer__category {
   color: var(--detail-color);
   line-height: 1.875em;
-  padding: 0px 24px 20px 24px;
 }
 .offer__img {
   display: block;
+  width: 100%;
 }
 .offer__item {
-  max-width: 370px;
-  margin-left: 30px;
-  margin-bottom: 30px;
+  width: 100%;
   background-color: #fff;
   position: relative;
   overflow: hidden;
@@ -1018,8 +1041,8 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms ease;
@@ -1035,6 +1058,16 @@ a {
   padding-right: 45px;
 }
 
+@media screen and (min-width: 768px) {
+  .offer__item {
+    flex-basis: calc(50% - 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .offer__item {
+    flex-basis: calc(33.33% - 30px);
+  }
+}
 .button {
   color: #fff;
   cursor: pointer;

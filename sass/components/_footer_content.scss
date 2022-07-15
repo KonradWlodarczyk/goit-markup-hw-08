@@ -36,6 +36,9 @@
         font-weight: 400;
         color: #fff;
         margin-bottom: 9px;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
       &__link {
         color: rgba(255, 255, 255, 0.6);
@@ -48,9 +51,6 @@
       }
       &__list {
         display: block;
-        &:last-child {
-            margin-bottom: 0;
-          }
       }
 }
 @media screen and (min-width: 768px) {
@@ -63,6 +63,9 @@
       min-width: 245px;
       flex-basis: auto;
       align-items: flex-start;
+      &__item {
+        text-align: start;
+      }
     }
 }
 .footer-social {
@@ -80,7 +83,7 @@
   @media screen and (min-width: 768px) {
     .footer-social {
       flex-basis: 50%;
-      margin-top: -120px;
+      padding-top: 5px;
     }
   }
   @media screen and (min-width: 1200px) {
