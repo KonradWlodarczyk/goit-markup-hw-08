@@ -1,0 +1,17 @@
+.button-mobile {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    &:hover, &:focus {
+        color: var(--brand-color);
+    }
+}
+@media screen and (min-width: 768px) {
+    .button-mobile {
+    display: none;
+    }
+}

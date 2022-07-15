@@ -1,0 +1,31 @@
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__logo {
+  display: flex;
+  color: var(--main-font-color);
+}
+}
+@media screen and (min-width: 480px){
+.header-section {
+  height: 60px;
+}
+}
+@media screen and (min-width: 768px) {
+  .header-section {
+    height: 80px;
+      &__logo {
+      margin-right: 83px;
+      }
+  }
+  }
+  @media screen and (min-width: 1200px) {
+    .header-section {
+        &__logo {
+        margin-right: 93px;
+        }
+    }
+  }
+  
+ 
