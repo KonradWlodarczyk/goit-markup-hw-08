@@ -412,29 +412,27 @@
         </div>
         <div class="newsletter">
           <h3 class="newsletter__title">zapisz się do newslettera</h3>
-          <div>
-            <form
-              class="newsletter__form"
-              name="formularz-newslettera"
-              autocomplete="on"
-              action="http://localhost:3000/posts"
-              method="POST"
-            >
-              <input
-                class="newsletter__box"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                required
-              />
-              <button class="button button--newsletter" type="submit">
-                Zapisz się
-                <svg class="newsletter__icon">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+          <form
+            class="newsletter__form"
+            name="formularz-newslettera"
+            autocomplete="on"
+            action="http://localhost:3000/posts"
+            method="POST"
+          >
+            <input
+              class="newsletter__box"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
+            <button class="button button--newsletter" type="submit">
+              Zapisz się
+              <svg class="newsletter__icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </section>
     </footer>

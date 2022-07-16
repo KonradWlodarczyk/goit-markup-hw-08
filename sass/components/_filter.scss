@@ -2,7 +2,7 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 40px;
@@ -12,6 +12,9 @@
 @media screen and (min-width: 768px) {
   .filter {
     padding-bottom: 30px;
+    &__list {
+    justify-content: center;
+    }
   }
 }
 @media screen and (min-width: 1200px) {
